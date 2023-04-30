@@ -10,7 +10,7 @@ Create MongoDB Database Server Container
 
 Now, Run Mongo Container:
 
-``` docker run -it -d -v /var/dbdata:/data/db -p 27017:27017 --name mongodb mongo ```
+``` docker run -it -d -v dbdata:/data/db -p 27017:27017 --name mongodb mongo ```
 
 Start container:
 
@@ -19,7 +19,7 @@ Start container:
 Access MongoDB Database Docker Terminal (Bash Shell)
 
 
-``` sudo docker exec -it mongodb bash ```
+``` docker exec -it mongodb bash ```
 
 
 Create Mongo Express Web Interface container (optional)
