@@ -16,7 +16,7 @@ Start container:
 
 ``` docker start mongodb ```
 
-Access MongoDB Database Docker Terminal (Bash Shell)
+Access MongoDB Database Docker Terminal (Bash)
 
 
 ``` docker exec -it mongodb bash ```
