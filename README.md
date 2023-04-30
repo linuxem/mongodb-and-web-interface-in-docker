@@ -24,5 +24,5 @@ Access MongoDB Database Docker Terminal (Bash)
 
 Create Mongo Express Web Interface container (optional)
 
-``` docker run --link mongo_db_name_container:mongo -p 8081:8081 -e ME_CONFIG_MONGODB_URL="mongodb://mongo:27017" mongo-express ```
+``` docker run --link {{ mongo_db_name_container }}:mongo -p 8081:8081 -e ME_CONFIG_MONGODB_URL="mongodb://mongo:27017" mongo-express ```
 
