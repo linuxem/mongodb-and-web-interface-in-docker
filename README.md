@@ -6,7 +6,7 @@ MongoDB: just on your machine run the Docker Pull command
 
 Create MongoDB Database Server Container
 
-``` sudo mkdir /var/dbdata ```
+``` mkdir dbdata ```
 
 Now, Run Mongo Container:
 
@@ -22,4 +22,7 @@ Access MongoDB Database Docker Terminal (Bash Shell)
 ``` sudo docker exec -it mongodb bash ```
 
 
- 
+Create Mongo Express Web Interface container (optional)
+
+``` docker run --link mongo_db_name_container:mongo -p 8081:8081 -e ME_CONFIG_MONGODB_URL="mongodb://mongo:27017" mongo-express ```
+
